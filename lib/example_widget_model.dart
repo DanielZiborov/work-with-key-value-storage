@@ -24,11 +24,15 @@ class ExampleWidgetModel {
   }
 
   Future<void> readToken() async {
-    final token = await _secureStorage.read(key: _FlutterSecureStorageKeys.tokenKey);
+    final token =
+        await _secureStorage.read(key: _FlutterSecureStorageKeys.tokenKey);
     print(token);
   }
 
   Future<void> setToken() async {
-    await _secureStorage.write(key: _FlutterSecureStorageKeys.tokenKey, value: '');
+    await _secureStorage.write(
+      key: _FlutterSecureStorageKeys.tokenKey,
+      value: 'efgeywgfwegfwhefh14263464126',
+    );
   }
 }
